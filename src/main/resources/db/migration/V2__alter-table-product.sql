@@ -1,0 +1,4 @@
+ALTER TABLE product
+ADD COLUMN active BOOLEAN DEFAULT TRUE;
+
+UPDATE product SET active = TRUE WHERE active IS NULL;
